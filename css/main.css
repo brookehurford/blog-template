@@ -5,16 +5,21 @@ html {
   box-sizing: inherit; }
 
 .title {
-  text-align: center; }
-
-.leftColumn, .rightColumn, .header li {
-  float: left; }
-
-.title {
   font-family: 'Philosopher', sans-serif; }
 
 html, body {
   font-family: 'Muli', sans-serif; }
+
+.title {
+  text-align: center; }
+
+.header ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.readMoreButton a, .leftColumn, .header li {
+  float: left; }
 
 html, body {
   margin: 0px;
@@ -27,8 +32,9 @@ p {
   font-size: 3em;
   color: #fff;
   letter-spacing: 3px;
-  position: relative;
-  top: 530px;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
   color: #fff; }
 
 .blogItem {
@@ -46,19 +52,20 @@ p {
     font-size: 12px;
     margin-top: 3px; }
 
-.readMoreButton {
+.readMoreButton a {
   font-size: 12px;
   color: #f37d65;
   text-decoration: none;
-  float: left;
-  padding-top: .5em;
+  padding-top: .75em;
   text-transform: uppercase; }
-
-.arrow {
+  .readMoreButton a:hover {
+    text-decoration: underline; }
+.readMoreButton img {
   max-width: 5%;
   margin-left: .5em; }
-  .arrow:hover {
+  .readMoreButton img:hover {
     margin-left: 1em;
+    cursor: pointer;
     -webkit-transition: margin-left .2s linear; }
 
 .wrapper {
@@ -74,20 +81,21 @@ p {
   background-image: -webkit-linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks.jpg");
   background-image: linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks.jpg");
   background-size: cover;
+  position: fixed;
   height: 100vh;
   width: 40%; }
 
 .rightColumn {
+  margin-left: 40%;
+  clear: both;
   width: 60%; }
 
 .header {
   overflow: auto;
   width: 100%; }
   .header ul {
-    position: relative;
-    left: 11%;
     overflow: auto;
-    width: 100%;
+    width: 60%;
     margin-bottom: 2.5em; }
   .header li {
     font-size: 14px;

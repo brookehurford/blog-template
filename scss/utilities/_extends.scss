@@ -1,11 +1,3 @@
-%centeredText {
-  text-align: center;
-}
-
-%floatLeft {
-  float: left;
-}
-
 //Fonts
 
 %headerFont {
@@ -14,4 +6,21 @@
 
 %bodyFont {
   font-family: 'Muli', sans-serif;
+}
+
+
+// Alignment
+
+%centeredText {
+  text-align: center;
+}
+
+%centeredBlock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%floatLeft {
+  float: left;
 }

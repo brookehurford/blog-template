@@ -12,7 +12,8 @@ p {
   @extend %headerFont;
   @extend %centeredText;
   @include textFormat(3em, $color: $white, $letter-spacing: 3px);
-  position: relative;
-  top: 530px;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
   color: $white;
 }
