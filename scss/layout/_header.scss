@@ -1,0 +1,7 @@
+.header {
+  @extend %centeredText;
+  li {
+    list-style-type: none;
+    float: left;
+  }
+}
