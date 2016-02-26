@@ -1,26 +1,19 @@
 // Colors
-
 $black: #000;
 $white: #fff;
-$blue: #01579B;
-$complement: complement($blue);
-$mutedColor: #b7beaf;
 
 $primary: #dbd36d;
 $secondary: #f37d65;
-$button: #8baa9f;
+$mutedColor: #b7beaf;
 
 
 // Measurements
-
 $fullWidth: 100%;
 
 // File Paths
-
 $path-img: "../img/";
 
 // Media Queries
-
 $smallDesktop: "(max-width: 1130px)";
 $tablet: "(max-width: 1105px)";
 $mobile: "(max-width: 602px)";

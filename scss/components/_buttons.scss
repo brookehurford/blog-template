@@ -2,8 +2,8 @@
   a {
     @include textFormat(12px, $color: $secondary);
     @extend %floatLeft;
-    text-decoration: none;
     padding-top: .75em;
+    text-decoration: none;
     text-transform: uppercase;
     &:hover {
       text-decoration: underline;

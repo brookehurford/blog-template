@@ -12,10 +12,7 @@ p {
   @extend %headerFont;
   @extend %centeredText;
   @include textFormat(3em, $color: $white, $letter-spacing: 3px);
-  position: absolute;
-  bottom: 5%;
-  left: 35%;
-  color: $white;
+  @include position(absolute, null null 5% 35%);
   @media screen and #{$tablet} {
     position: static;
     margin: 0;

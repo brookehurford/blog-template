@@ -34,8 +34,7 @@ p {
   letter-spacing: 3px;
   position: absolute;
   bottom: 5%;
-  left: 35%;
-  color: #fff; }
+  left: 35%; }
   @media screen and (max-width: 1105px) {
     .title {
       position: static;
@@ -47,6 +46,9 @@ p {
   .blogItem .blogImage {
     width: 100%;
     box-shadow: 2px 2px 2px #b7beaf; }
+    .blogItem .blogImage:hover {
+      background-image: -webkit-linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks.jpg");
+      background-image: linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks.jpg"); }
   .blogItem .date {
     font-size: 12px;
     margin-top: 3px; }
@@ -54,11 +56,14 @@ p {
     .blogItem {
       padding-top: 25px; } }
 
+.blogImage:hover {
+  content: "hi"; }
+
 .readMoreButton a {
   font-size: 12px;
   color: #f37d65;
-  text-decoration: none;
   padding-top: .75em;
+  text-decoration: none;
   text-transform: uppercase; }
   .readMoreButton a:hover {
     text-decoration: underline; }
@@ -76,9 +81,6 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover {
   border: 1px solid #dbd36d; }
-
-input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:active, input[type="datetime-local"]:active, input[type="email"]:active, input[type="month"]:active, input[type="number"]:active, input[type="password"]:active, input[type="search"]:active, input[type="tel"]:active, input[type="text"]:active, input[type="time"]:active, input[type="url"]:active, input[type="week"]:active, input:not([type]):active, textarea:active {
-  border: 1px solid #f37d65; }
 
 .commentBox {
   padding-top: 5%;
@@ -126,20 +128,19 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     .leftColumn {
       background-image: -webkit-linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks-mobile.jpg");
       background-image: linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks-mobile.jpg");
+      float: none;
       position: static;
       height: 10vh;
-      float: none;
       width: 100%; } }
 
 .rightColumn {
   margin-left: 40%;
-  clear: both;
   width: 60%; }
   @media screen and (max-width: 1105px) {
     .rightColumn {
+      margin: 0 auto;
       margin-left: 0;
-      width: 90%;
-      margin: 0 auto; } }
+      width: 90%; } }
 
 .blogList {
   max-width: 80%;
@@ -182,7 +183,7 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
       -webkit-transition: border-bottom .2s linear; }
     @media screen and (max-width: 1130px) {
       .header li {
-        font-size: 10px; }
+        font-size: 11px; }
         .header li:first-child {
           margin-left: 15%; } }
     @media screen and (max-width: 1105px) {

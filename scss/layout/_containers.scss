@@ -16,21 +16,20 @@
   @media screen and #{$tablet} {
     @include background-image(linear-gradient(rgba(transparent, 0),
       rgba($primary, 0.45)),url("#{$path-img}/rocks-mobile.jpg"));
+    float: none;
     position: static;
     height: 10vh;
-    float: none;
     width: 100%;
   }
 }
 
 .rightColumn {
   margin-left: 40%;
-  clear:both;
   width: 60%;
   @media screen and #{$tablet} {
+    margin: 0 auto;
     margin-left: 0;
     width: $fullWidth - 10%;
-    margin: 0 auto;
   }
 }
 

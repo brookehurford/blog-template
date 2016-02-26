@@ -1,15 +1,12 @@
 .header {
   overflow: auto;
   width: 100%;
-  @media screen and #{$smallDesktop} {
-
-  }
   ul {
     @extend %centeredBlock;
     overflow: auto;
     width: 60%;
     @media screen and #{$tablet} {
-      width: 100%;
+      width: $fullWidth;
     }
   }
   li {
@@ -27,7 +24,7 @@
       -webkit-transition: border-bottom .2s linear;
     }
     @media screen and #{$smallDesktop} {
-      @include textFormat(10px);
+      @include textFormat(11px);
       &:first-child {
         margin-left: 15%;
       }

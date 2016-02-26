@@ -1,8 +1,12 @@
 .blogItem {
   @include padding(50px null null null);
   .blogImage {
-    width: 100%;
+    width: $fullWidth;
     box-shadow: 2px 2px 2px $mutedColor;
+    &:hover {
+      @include background-image(linear-gradient(rgba(transparent, 0),
+        rgba($primary, 0.45)),url("#{$path-img}/rocks.jpg"));
+    }
   }
   .date {
     @include textFormat(12px);
@@ -11,4 +15,8 @@
   @media screen and #{$smallDesktop} {
     @include padding(25px null null null);
   }
+}
+
+.blogImage:hover {
+  content: "hi";
 }
