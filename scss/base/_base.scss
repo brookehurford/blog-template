@@ -1,6 +1,11 @@
 html, body{
+  @extend %bodyFont;
   margin: 0px;
   padding: 0px;
+}
+
+p {
+  @include textFormat(14px);
 }
 
 .title {

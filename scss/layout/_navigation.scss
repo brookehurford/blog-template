@@ -1,7 +1,21 @@
 .header {
-  @extend %centeredText;
+  overflow: auto;
+  width: 100%;
+  ul {
+    position: relative;
+    left: 11%;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
   li {
     @extend %floatLeft;
+    @include textFormat(14px, $letter-spacing: 2px);
+    margin-left: 2px;
+    text-transform: uppercase;
     list-style-type: none;
+    padding: 2%;
+    margin-left: 2em;
+    border-bottom: 2px solid $secondary;
   }
 }

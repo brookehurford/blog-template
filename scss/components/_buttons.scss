@@ -1,0 +1,16 @@
+.readMoreButton {
+  @include textFormat(12px, $color: $secondary);
+  text-decoration: none;
+  float: left;
+  padding-top: .5em;
+  text-transform: uppercase;
+}
+
+.arrow {
+  max-width: 5%;
+  margin-left: .5em;
+  &:hover {
+    margin-left: 1em;
+    -webkit-transition: margin-left .2s linear;
+  }
+}

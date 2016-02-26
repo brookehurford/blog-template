@@ -1,0 +1,11 @@
+.blogItem {
+  @include outer-container(80%);
+  .blogImage {
+    width: 100%;
+    box-shadow: 2px 2px 2px $mutedColor;
+  }
+  .date {
+    @include textFormat(12px);
+    margin-top: 3px;
+  }
+}
