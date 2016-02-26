@@ -1,20 +1,33 @@
 .header {
   overflow: auto;
   width: 100%;
+  @media screen and #{$smallDesktop} {
+
+  }
   ul {
     @extend %centeredBlock;
     overflow: auto;
     width: 60%;
-    margin-bottom: 2.5em;
+    border: 1px solid green;
+    @media screen and #{$tablet} {
+      width: 100%;
+    }
   }
   li {
     @extend %floatLeft;
+    @extend %centeredBlock;
     @include textFormat(14px, $letter-spacing: 2px);
-    margin-left: 2px;
     text-transform: uppercase;
     list-style-type: none;
     padding: 2%;
-    margin-left: 2em;
+    margin-right: 2em;
     border-bottom: 2px solid $secondary;
+    &:hover {
+      border-bottom: 3px solid $primary;
+      -webkit-transition: border-bottom .2s linear;
+    }
+    @media screen and #{$smallDesktop} {
+      @include textFormat(10px);
+    }
   }
 }

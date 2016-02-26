@@ -13,7 +13,7 @@ html, body, ::-webkit-input-placeholder {
 .title {
   text-align: center; }
 
-.header ul {
+.header ul, .header li {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -45,6 +45,9 @@ p {
   .blogItem .date {
     font-size: 12px;
     margin-top: 3px; }
+  @media screen and (max-width: 1130px) {
+    .blogItem {
+      padding-top: 25px; } }
 
 .readMoreButton a {
   font-size: 12px;
@@ -97,6 +100,15 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 850px) {
+    .wrapper {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .leftColumn {
   background-image: -webkit-linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks.jpg");
@@ -105,11 +117,23 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   position: fixed;
   height: 100vh;
   width: 40%; }
+  @media screen and (max-width: 850px) {
+    .leftColumn {
+      border: 1px solid red;
+      position: static;
+      height: 10vh;
+      float: none;
+      width: 100%; } }
 
 .rightColumn {
   margin-left: 40%;
   clear: both;
   width: 60%; }
+  @media screen and (max-width: 850px) {
+    .rightColumn {
+      border: 1px solid cyan;
+      margin-left: 0;
+      width: 100%; } }
 
 .blogList {
   max-width: 80%;
@@ -119,6 +143,15 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 850px) {
+    .blogList {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .blogList::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .header {
   overflow: auto;
@@ -126,15 +159,23 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   .header ul {
     overflow: auto;
     width: 60%;
-    margin-bottom: 2.5em; }
+    border: 1px solid green; }
+    @media screen and (max-width: 850px) {
+      .header ul {
+        width: 100%; } }
   .header li {
     font-size: 14px;
     letter-spacing: 2px;
-    margin-left: 2px;
     text-transform: uppercase;
     list-style-type: none;
     padding: 2%;
-    margin-left: 2em;
+    margin-right: 2em;
     border-bottom: 2px solid #f37d65; }
+    .header li:hover {
+      border-bottom: 3px solid #dbd36d;
+      -webkit-transition: border-bottom .2s linear; }
+    @media screen and (max-width: 1130px) {
+      .header li {
+        font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,4 +8,7 @@
     @include textFormat(12px);
     margin-top: 3px;
   }
+  @media screen and #{$smallDesktop} {
+    @include padding(25px null null null);
+  }
 }
