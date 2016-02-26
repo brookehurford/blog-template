@@ -39,7 +39,6 @@ p {
   @media screen and (max-width: 1105px) {
     .title {
       position: static;
-      color: #000;
       margin: 0;
       padding-top: .5em; } }
 
@@ -64,7 +63,7 @@ p {
   .readMoreButton a:hover {
     text-decoration: underline; }
 .readMoreButton img {
-  max-width: 5%;
+  width: 30px;
   margin-left: .5em; }
   .readMoreButton img:hover {
     margin-left: 1em;
@@ -125,6 +124,8 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   width: 40%; }
   @media screen and (max-width: 1105px) {
     .leftColumn {
+      background-image: -webkit-linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks-mobile.jpg");
+      background-image: linear-gradient(transparent, rgba(219, 211, 109, 0.45)), url("../img//rocks-mobile.jpg");
       position: static;
       height: 10vh;
       float: none;
@@ -166,7 +167,7 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     width: 60%; }
     @media screen and (max-width: 1105px) {
       .header ul {
-        width: 60%; } }
+        width: 100%; } }
   .header li {
     font-size: 14px;
     letter-spacing: 2px;
@@ -184,5 +185,15 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
         font-size: 10px; }
         .header li:first-child {
           margin-left: 15%; } }
+    @media screen and (max-width: 1105px) {
+      .header li {
+        font-size: 14px; }
+        .header li:first-child {
+          margin-left: 25%; } }
+    @media screen and (max-width: 602px) {
+      .header li {
+        font-size: 12px; }
+        .header li:first-child {
+          margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

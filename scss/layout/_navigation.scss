@@ -9,7 +9,7 @@
     overflow: auto;
     width: 60%;
     @media screen and #{$tablet} {
-      width: 60%;
+      width: 100%;
     }
   }
   li {
@@ -30,6 +30,18 @@
       @include textFormat(10px);
       &:first-child {
         margin-left: 15%;
+      }
+    }
+    @media screen and #{$tablet} {
+      @include textFormat(14px);
+      &:first-child {
+        margin-left: 25%;
+      }
+    }
+    @media screen and #{$mobile} {
+      @include textFormat(12px);
+      &:first-child {
+        margin-left: 0;
       }
     }
   }

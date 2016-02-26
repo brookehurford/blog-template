@@ -18,7 +18,6 @@ p {
   color: $white;
   @media screen and #{$tablet} {
     position: static;
-    color: $black;
     margin: 0;
     padding-top: .5em;
   }

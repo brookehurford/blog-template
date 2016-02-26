@@ -14,6 +14,8 @@
   height: 100vh;
   width: 40%;
   @media screen and #{$tablet} {
+    @include background-image(linear-gradient(rgba(transparent, 0),
+      rgba($primary, 0.45)),url("#{$path-img}/rocks-mobile.jpg"));
     position: static;
     height: 10vh;
     float: none;
