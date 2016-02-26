@@ -36,6 +36,12 @@ p {
   bottom: 5%;
   left: 35%;
   color: #fff; }
+  @media screen and (max-width: 1105px) {
+    .title {
+      position: static;
+      color: #000;
+      margin: 0;
+      padding-top: .5em; } }
 
 .blogItem {
   padding-top: 50px; }
@@ -100,7 +106,7 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1105px) {
     .wrapper {
       max-width: 90%;
       margin-left: auto;
@@ -117,9 +123,8 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   position: fixed;
   height: 100vh;
   width: 40%; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1105px) {
     .leftColumn {
-      border: 1px solid red;
       position: static;
       height: 10vh;
       float: none;
@@ -129,11 +134,11 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   margin-left: 40%;
   clear: both;
   width: 60%; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1105px) {
     .rightColumn {
-      border: 1px solid cyan;
       margin-left: 0;
-      width: 100%; } }
+      width: 90%;
+      margin: 0 auto; } }
 
 .blogList {
   max-width: 80%;
@@ -143,7 +148,7 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1105px) {
     .blogList {
       max-width: 90%;
       margin-left: auto;
@@ -158,11 +163,10 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
   width: 100%; }
   .header ul {
     overflow: auto;
-    width: 60%;
-    border: 1px solid green; }
-    @media screen and (max-width: 850px) {
+    width: 60%; }
+    @media screen and (max-width: 1105px) {
       .header ul {
-        width: 100%; } }
+        width: 60%; } }
   .header li {
     font-size: 14px;
     letter-spacing: 2px;
@@ -173,9 +177,12 @@ input[type="color"]:active, input[type="date"]:active, input[type="datetime"]:ac
     border-bottom: 2px solid #f37d65; }
     .header li:hover {
       border-bottom: 3px solid #dbd36d;
+      cursor: pointer;
       -webkit-transition: border-bottom .2s linear; }
     @media screen and (max-width: 1130px) {
       .header li {
-        font-size: 10px; } }
+        font-size: 10px; }
+        .header li:first-child {
+          margin-left: 15%; } }
 
 /*# sourceMappingURL=main.css.map */

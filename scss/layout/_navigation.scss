@@ -8,9 +8,8 @@
     @extend %centeredBlock;
     overflow: auto;
     width: 60%;
-    border: 1px solid green;
     @media screen and #{$tablet} {
-      width: 100%;
+      width: 60%;
     }
   }
   li {
@@ -24,10 +23,14 @@
     border-bottom: 2px solid $secondary;
     &:hover {
       border-bottom: 3px solid $primary;
+      cursor: pointer;
       -webkit-transition: border-bottom .2s linear;
     }
     @media screen and #{$smallDesktop} {
       @include textFormat(10px);
+      &:first-child {
+        margin-left: 15%;
+      }
     }
   }
 }

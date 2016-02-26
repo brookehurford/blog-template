@@ -14,11 +14,10 @@
   height: 100vh;
   width: 40%;
   @media screen and #{$tablet} {
-    border: 1px solid red;
     position: static;
     height: 10vh;
     float: none;
-    width: $fullWidth;
+    width: 100%;
   }
 }
 
@@ -27,9 +26,9 @@
   clear:both;
   width: 60%;
   @media screen and #{$tablet} {
-    border: 1px solid cyan;
     margin-left: 0;
-    width: $fullWidth;
+    width: $fullWidth - 10%;
+    margin: 0 auto;
   }
 }
 
