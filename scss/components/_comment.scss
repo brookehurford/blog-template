@@ -1,0 +1,33 @@
+#{$all-text-inputs} {
+  border: 1px solid $mutedColor;
+}
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+  border: 1px solid $primary;
+}
+
+#{$all-text-inputs-active} {
+  border: 1px solid $secondary;
+}
+
+.commentBox {
+  @include padding(5% null 50px null);
+  border-bottom: 1px solid $mutedColor;
+  .commentHeader {
+    @include textFormat(14px);
+    font-style: italic;
+  }
+  input {
+    margin-top: 3%;
+    height: 10em;
+    width: $fullWidth;
+    box-shadow: .5px 1px 1px $mutedColor;
+  }
+}
+
+::-webkit-input-placeholder {
+  @extend %bodyFont;
+  padding-left: 20px;
+  font-size: 13px;
+}

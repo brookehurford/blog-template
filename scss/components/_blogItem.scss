@@ -1,5 +1,5 @@
 .blogItem {
-  @include outer-container(80%);
+  @include padding(50px null null null);
   .blogImage {
     width: 100%;
     box-shadow: 2px 2px 2px $mutedColor;
