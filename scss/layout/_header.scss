@@ -1,7 +1,7 @@
 .header {
   @extend %centeredText;
   li {
+    @extend %floatLeft;
     list-style-type: none;
-    float: left;
   }
 }
