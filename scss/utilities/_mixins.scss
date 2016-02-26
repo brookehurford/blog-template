@@ -1,0 +1,7 @@
+@mixin textFormat($size: null, $weight: null, $color: null, $letter-spacing: null, $l-height: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  line-height: $l-height;
+}
